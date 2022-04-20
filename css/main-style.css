@@ -1,0 +1,278 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;  
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+    span{
+        color:#eeff00;
+    }
+
+    .img-pokemon{
+        width: 100%;
+        height: 100%;
+    }
+
+   
+   figcaption{
+       font-weight: 800;
+   }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 2fr));
+    margin: 4rem;
+}
+
+figure{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    height: 250px;
+    width: 10rem;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 96;
+    border: 5px solid rgb(255, 255, 255)
+}
+
+figure::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 30%;
+    width: 15rem;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    border: 5px solid white;
+}
+
+.back-pokemon{
+    position: relative;
+    background-color: #ffffff;
+    margin: 15px;
+    height: 90px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+    color:#eeff00;
+}
+
+.icon{
+    height: 50px;
+    position: fixed;
+    top: 7px;
+    left: 10px;
+    z-index: 110;
+}
+
+.back-title{
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 80px;
+    padding-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 1060px) {
+    body{
+        font-size: 20px;
+    }
+
+    .icon{
+        height: 40px;
+        position: fixed;
+        top: 13px;
+        left: 10px;
+    }
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto  auto auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    figure{
+        margin: 10px;
+        height: 350px;
+        width: 15rem;
+    }
+
+    .back-pokemon{
+        background-color: #ffffff;
+        margin: 15px;
+        height: 140px;
+    }
+
+}
+
+.links{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 950px) {
+    body{
+        font-size: 20px;
+    }
+
+    .icon{
+        height: 40px;
+        position: fixed;
+        top: 15px;
+        left: 10px;
+    }
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto  auto auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    figure{
+        margin: 10px;
+        height: 350px;
+        width: 15rem;
+    }
+
+    .back-pokemon{
+        background-color: #ffffff;
+        margin: 15px;
+        height: 140px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    body{
+        font-size: 20px;
+    }
+
+    .icon{
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+    }
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    figure{
+        margin: 10px;
+        height: 350px;
+        width: 15rem;
+    }
+
+    .back-pokemon{
+        background-color: #ffffff;
+        margin: 15px;
+        height: 140px;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    body{
+        font-size: 20px;
+    }
+
+    .icon{
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+    }
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    figure{
+        margin: 10px;
+        height: 350px;
+        width: 15rem;
+    }
+
+    .back-pokemon{
+        background-color: #ffffff;
+        margin: 15px;
+        height: 140px;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    body{
+        font-size: 20px;
+    }
+
+    .icon{
+        height: 25px;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+    }
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    figure{
+        margin: 10px;
+        height: 350px;
+        width: 15rem;
+    }
+
+    .back-pokemon{
+        background-color: #ffffff;
+        margin: 15px;
+        height: 140px;
+    }
+
+
+}
+
+
+
